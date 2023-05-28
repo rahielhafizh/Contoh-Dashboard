@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: 'Shantell Sans', cursive;
+  margin: 0;
+  padding: 0;
+}
+ 
+header {
+  display: inline;
+}
+ 
+nav {
+  background-color: #BC8F8F;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+ 
+nav ul {
+  padding-inline: 4rem;
+ 
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+}
+ 
+nav li {
+  list-style-type: none;
+}
+ 
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+ 
+nav a:hover {
+  font-weight: bold;
+  font-size: 17px;
+}
+ 
+main {
+  padding: 20px;
+ 
+  display: flex;
+  gap: 1.5rem;
+}
+ 
+#content {
+  flex: 5;
+ 
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+ 
+aside {
+  flex: 2;
+}
+ 
+h2 {
+  color: #bc8686;
+}
+ 
+h3 {
+  color: #bc8686;
+}
+ 
+footer {
+  padding: 20px;
+  color: #fff;
+  background-color: #BC8F8F;
+}
+ 
+.jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://storage.googleapis.com/dvnaz123/jumbotron.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+}
+ 
+.profile header {
+  text-align: center;
+}
+ 
+.featured-image {
+  text-align: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  max-width: 300px;
+  /* max-height: 300px; */
+  border-radius: 999px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-image {
+  width: 100%;
+  border-radius: 8px;
+}
+ 
+.card {
+  border: 1px solid #BC8F8F;
+  border-bottom: 4px solid #bc8686;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.review img {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.review h3 {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.review p {
+  margin: 0;
+}
+ 
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+ 
+  main aside {
+    text-align: center;
+    align-self: center;
+  }
+}
+ 
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+ 
+  main aside {
+    align-self: stretch;
+  }
+}
